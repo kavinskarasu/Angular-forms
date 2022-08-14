@@ -17,8 +17,22 @@ cars=''
 count=0;
   ngOnInit(): void {
   }
+
+  loadValues(FormValue:NgForm){
+    let userDetails={
+    fistName:'kavi',
+    terms:false,
+    fav_language:'CSS',
+    cars:'opel',
+    message:'hi i am kavi'
+    }
+    FormValue.setValue(userDetails)
+  }
   addCustomerForm(FormValue:NgForm){
     console.log(FormValue.value);
+  }
+  resetForm(FormValue:NgForm){
+FormValue.resetForm()
   }
 
 }
