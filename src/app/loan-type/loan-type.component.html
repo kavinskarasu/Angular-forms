@@ -1,0 +1,15 @@
+<p>loan-type works!</p>
+
+
+<form  *ngIf="addLoanTypesForm"[formGroup]="addLoanTypesForm">
+    <label>loanName:</label>
+    <input type="text" formControlName="loanName">
+    <label>loanDescription:</label>
+    <textarea formControlName="loanDescription"></textarea>
+    <label>loan-type</label>
+    <input type="text" formControlName="loanType">
+    <input  type="text"formControlName="Date">
+    <label>Loan payment</label>
+    <input type="text" formControlName="LoanPayment">
+    <button (click)="addLoanType()">Add LoanType</button>
+</form>
